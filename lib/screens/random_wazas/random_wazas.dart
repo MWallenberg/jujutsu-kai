@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:jujutsu_kai/screens/random_wazas/components/choose_belt.dart';
+import 'package:jujutsu_kai/screens/random_wazas/components/choose_waza.dart';
 import 'package:jujutsu_kai/screens/random_wazas/form_state.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +31,7 @@ class _RandomWazasState extends State<RandomWazas> {
           ),
           Step(
             title: Text("Tekniker"),
-            content: Text("Ange alla typer av tekniker du vill träna")
+            content: ChooseWaza(),
           ),
           Step(
             title: Text("Längd"),
