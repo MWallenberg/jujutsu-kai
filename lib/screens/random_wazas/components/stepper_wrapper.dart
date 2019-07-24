@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:jujutsu_kai/models/waza.dart';
+import 'package:jujutsu_kai/screens/random_waza_result/random_waza_result.dart';
 import 'package:jujutsu_kai/screens/random_wazas/components/choose_belt.dart';
 import 'package:jujutsu_kai/screens/random_wazas/components/choose_length.dart';
 import 'package:jujutsu_kai/screens/random_wazas/components/choose_waza.dart';
@@ -28,9 +29,18 @@ class _StepperWraperState extends State<StepperWraper> {
       return correctBelt && correctType;
     }).toList();
 
+    // Shuffle the list, then take the first wazas in it
     filteredWazas.shuffle();
+    filteredWazas = filteredWazas.take(formState.getNumberOfWazas()).toList();
+    _navigateToResultScreen(filteredWazas);
+  }
 
-    // Do something with this list? Present it in a different view?
+  void _navigateToResultScreen(List<Waza> wazas) {
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (context) => RandomWazaResult(
+        wazas: wazas,
+      ))
+    );
   }
 
   @override
