@@ -25,6 +25,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   provider: ^3.0.0
   enum_to_string: ^1.0.7
+  numberpicker: ^1.0.0
 
 dev_dependencies:
   flutter_test:
