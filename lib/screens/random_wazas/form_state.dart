@@ -8,7 +8,7 @@ class RandomWazaFormState extends ChangeNotifier {
   int _numberOfWazas;
 
   RandomWazaFormState() : super() {
-    _belt = Belt.rokkyu;
+    _belt = Belt.gokyu;
     _numberOfWazas = 10;
     _wazaTypes = {};
 
