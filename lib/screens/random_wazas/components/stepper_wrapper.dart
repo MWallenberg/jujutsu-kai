@@ -59,6 +59,11 @@ class _StepperWraperState extends State<StepperWraper> {
         ),
         Step(title: Text("Längd"), content: ChooseLength())
       ],
+      onStepTapped: (int step) {
+        setState(() {
+          _index = step;
+        });
+      },
       onStepContinue: () {
         setState(() {
           if (_index == 2) {
