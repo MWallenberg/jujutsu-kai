@@ -11,3 +11,16 @@ consisting of techinques which you should already know.
 
 Maybe more features will be implemented. The maintainer just needs to think of
 useful features. Suggestions are welcome.
+
+## How do I run this?
+
+The app is created in Flutter. So, download Flutter following their [documentation](https://flutter.dev/docs/get-started/install), 
+and then run the following:
+
+```bash
+# To run debug build:
+flutter run
+
+# Or, to run in release mode:
+flutter run --release
+```
