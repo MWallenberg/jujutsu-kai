@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:jujutsu_kai/screens/about_style/about_style.dart';
 import 'package:jujutsu_kai/screens/random_wazas/random_wazas.dart';
 
@@ -51,12 +52,12 @@ class _StartPageState extends State<StartPage> {
               ),
             ),
             ListTile(
-              leading: Icon(Icons.pan_tool),
+              leading: Icon(FontAwesomeIcons.handPaper),
               title: Text("Testa dig själv"),
               onTap: () => _setScreen(_Screen.randomWazas),
             ),
             ListTile(
-              leading: Icon(Icons.info),
+              leading: Icon(FontAwesomeIcons.info),
               title: Text("Om Ju-jutsu Kai"),
               onTap: () => _setScreen(_Screen.aboutStyle),
             )

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jujutsu_kai/models/waza.dart';
+import 'package:jujutsu_kai/screens/random_waza_result/components/waza_card.dart';
 
 class RandomWazaResult extends StatelessWidget {
 
@@ -10,12 +11,8 @@ class RandomWazaResult extends StatelessWidget {
     super();
 
   _getListTiles() {
-    return _wazas.map<ListTile>((Waza waza) {
-      Text subtitle = waza.defense != null ? Text(waza.defense) : null;
-      return ListTile(
-        title: Text(waza.name),
-        subtitle: subtitle,
-      );
+    return _wazas.map<WazaCard>((Waza waza) {
+      return WazaCard(waza: waza);
     }).toList();
   }
 
