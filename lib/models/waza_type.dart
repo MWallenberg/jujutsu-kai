@@ -8,5 +8,6 @@ enum WazaType {
   nageWaza,
   katameWaza,
   jigoWaza,
-  renrakuWaza
+  renrakuWaza,
+  kata
 }

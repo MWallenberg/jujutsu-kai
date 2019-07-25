@@ -5,5 +5,9 @@ enum Belt {
   sankyu, // 3th kyu, green belt
   nikyu, // 2th kyu, blue belt
   ikkyu, // 1th kyu, brown belt
-  shodan // dan, black belt
+  shodan, // 1st dan, black belt
+  nidan, // 2nd dan, black belt
+  sandan, // 3rd dan, black belt
+  yondan, // 4th dan, black belt
+  godan, // 5th dan, black belt
 }

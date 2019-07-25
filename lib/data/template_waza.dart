@@ -1,6 +1,22 @@
 import 'package:jujutsu_kai/models/waza.dart';
 import 'package:jujutsu_kai/models/belt.dart';
 import 'package:jujutsu_kai/models/waza_type.dart';
+/*
+Template file. Copy and paste to set up new Waza file for a belt.
+*/
+
+/*
+Useful regexp to convert archive of techinques from jujutsu kai homepage
+to these classes.
+\s*[\d]+\.\s*
+\n
+
+\"[^"]+\"
+""
+
+\n
+"),\n
+*/
 
 List<Waza> getXXXXXWaza() {
   return <Waza>[
