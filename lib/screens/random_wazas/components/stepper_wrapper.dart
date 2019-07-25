@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'package:jujutsu_kai/data/waza_db.dart';
 import 'package:jujutsu_kai/models/waza.dart';
 import 'package:jujutsu_kai/screens/random_waza_result/random_waza_result.dart';
 import 'package:jujutsu_kai/screens/random_wazas/components/choose_belt.dart';
@@ -20,7 +21,7 @@ class _StepperWraperState extends State<StepperWraper> {
   int _index = 0;
 
   void _performSearch(RandomWazaFormState formState) {
-    List<Waza> filteredWazas = Waza.allWaza.where((Waza waza) {
+    List<Waza> filteredWazas = WazaDatabase.getAllWaza().where((Waza waza) {
       // The selected techniques must be:
       // - The correct difficulty level (Belt),
       // - Amongst the included waza types, and
