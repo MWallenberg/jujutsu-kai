@@ -5,13 +5,14 @@ class AboutStyle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
-      child: ListView(
-        children: <Widget>[
-          AboutText()
-          ],
-      ),
+
+    return ListView(
+      children: <Widget>[
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
+          child: AboutText(),
+        )
+      ]
     );
   }
 }

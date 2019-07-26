@@ -2,9 +2,11 @@ import "package:flutter/material.dart";
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:jujutsu_kai/screens/about_style/about_style.dart';
 import 'package:jujutsu_kai/screens/random_wazas/random_wazas.dart';
+import 'package:jujutsu_kai/screens/waza_archive/waza_archive.dart';
 
 enum _Screen {
   randomWazas,
+  wazaArchive,
   aboutStyle
 }
 
@@ -33,6 +35,8 @@ class _StartPageState extends State<StartPage> {
     switch (_screen) {
       case _Screen.randomWazas:
         return RandomWazas();
+      case _Screen.wazaArchive:
+        return WazaArchive();
       case _Screen.aboutStyle:
         return AboutStyle();
 
@@ -55,6 +59,11 @@ class _StartPageState extends State<StartPage> {
               leading: Icon(FontAwesomeIcons.handPaper),
               title: Text("Testa dig själv"),
               onTap: () => _setScreen(_Screen.randomWazas),
+            ),
+            ListTile(
+              leading: Icon(FontAwesomeIcons.book),
+              title: Text("Tekniker"),
+              onTap: () => _setScreen(_Screen.wazaArchive),
             ),
             ListTile(
               leading: Icon(FontAwesomeIcons.info),
