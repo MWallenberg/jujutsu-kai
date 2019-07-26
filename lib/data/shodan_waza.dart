@@ -22,8 +22,8 @@ List<Waza> getShodanWaza() {
     Waza(belt: Belt.shodan, type: WazaType.kata, name: "Ju-jutsu kai no kata, serie 1"),
 
     // Jigo Waza
-    Waza(belt: Belt.shodan, type: WazaType.jigoWaza, name: "Grepp i håret bakifrån med neddrag. Shiho nage, ude henkan gatame"),
-    Waza(belt: Belt.shodan, type: WazaType.jigoWaza, name: "Försök till stryptag från sidan. Harai goshi, ude hishigi hiza gatame"),
+    Waza(belt: Belt.shodan, type: WazaType.jigoWaza, name: "Grepp i håret bakifrån med neddrag", defense: "Shiho nage, ude henkan gatame"),
+    Waza(belt: Belt.shodan, type: WazaType.jigoWaza, name: "Försök till stryptag från sidan", defense: "Harai goshi, ude hishigi hiza gatame"),
     Waza(belt: Belt.shodan, type: WazaType.jigoWaza, name: "Stryptag bakifrån", defense: "Sukui nage, ude hishigi hiza gatame"),
     Waza(belt: Belt.shodan, type: WazaType.jigoWaza, name: "Stryptag med armen med neddrag", defense: "Ura makikomi, ude henkan gatame"),
     Waza(belt: Belt.shodan, type: WazaType.jigoWaza, name: "Kravattgrepp med neddrag", defense: "Frigöring, ude henkan gatame"),
