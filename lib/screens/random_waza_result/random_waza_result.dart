@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jujutsu_kai/models/waza.dart';
-import 'package:jujutsu_kai/screens/random_waza_result/components/waza_card.dart';
+import 'package:jujutsu_kai/generic_components/waza_card.dart';
 
 class RandomWazaResult extends StatelessWidget {
 

@@ -1,6 +1,7 @@
 import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flutter/material.dart';
 import 'package:jujutsu_kai/data/waza_db.dart';
+import 'package:jujutsu_kai/generic_components/waza_card.dart';
 import 'package:jujutsu_kai/models/waza.dart';
 import 'package:jujutsu_kai/models/belt.dart';
 import 'package:jujutsu_kai/generic_components/header_list_tile.dart';
@@ -30,6 +31,12 @@ class WazaArchiveResult extends StatelessWidget {
       tiles.add(
         HeaderListTile(header: EnumToString.parseCamelCase(wazaType))
       );
+
+      _wazas.forEach((Waza waza) {
+        if (waza.type == wazaType) {
+          tiles.add(WazaCard(waza: waza));
+        }
+      });
     });
 
     return tiles;

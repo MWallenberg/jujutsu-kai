@@ -9,13 +9,14 @@ class HeaderListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Padding(
+      padding: EdgeInsets.only(bottom: 10.0),
+      child: Container(
         decoration: BoxDecoration(
           border: Border(
             bottom: BorderSide(width: 1.0, color: Colors.grey)
-          )
+          ),
         ),
-        // color: Colors.grey.withOpacity(.5),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           mainAxisSize: MainAxisSize.max,
@@ -28,6 +29,7 @@ class HeaderListTile extends StatelessWidget {
           ],
         ),
         padding: EdgeInsets.all(10.0),
-      );
+      ),
+    );
   }
 }
